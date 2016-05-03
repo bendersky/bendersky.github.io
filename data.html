@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+      Michael Bendersky @ CIIR (Data)
+        </title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/style1.css"/> 
+
+    <body>
+        <TABLE class="header">
+        <TR>
+            <TD> </TD>
+            <TD class="details">
+                <table>
+                <TR> <h1>Michael Bendersky</h1> </TR>
+                <TR> <img src="res/email.png" alt="Email" align=middle > </TR>
+                </table>
+            </TD>
+        </TR>	
+        </TABLE> 
+        <hr>
+        <TABLE class="navigation">
+            <TR>
+                <TD class="navlink"></TD>
+                <TD class="navlink"></TD>
+                <TD class="navlink"></TD>
+                <TD class="navlink">
+                    <a href="index.html"> Home </a>
+                </TD>                
+                <TD class="navlink">
+                    <a href="pubs.html"> Publications </a>
+                </TD>           
+                <TD class="navlink">
+                    Data
+                </TD>    
+                <TD class="navlink"></TD>
+                <TD class="navlink"></TD>
+                <TD class="navlink"></TD>                
+            </TR>	
+        </TABLE> 
+        <hr>
+        
+         <h2> Experimental Data and Annotations </h2>
+         
+         <p align="justify"> In some of the published material I needed to use annotated data, which was not readily available from traditional sources such as TREC. When possible, I will publish this data here, in order to promote the reproducibility of our research.
+         
+        <h3> Query Representation and Understanding Dataset (QRU-1) </h3>
+         
+         <ul>
+            <li> The <a href="http://research.microsoft.com/en-us/downloads/d6e8c8f2-721f-4222-81fa-4251b6c33752/default.aspx">Query Representation and Understanding</a> (QRU-1) data set contains a set of similar queries that can be used in web research such as query transformation and relevance ranking. QRU-1 contains similar queries that are related to existing benchmark data sets, such as TREC query sets. The data set was created by extracting 100 TREC queries, training a query-generation model and a commercial search engine, generating similar queries from TREC queries with the model, and removal of mistakenly generated queries. More details on dataset user can be found in <a href="http://research.microsoft.com/en-us/people/hangli/qru-1.pdf">this paper</a>.</li>
+         </ul>
+
+         <h3> Syntactic Annotation of Search Queries </h3>
+         
+         <ul>
+            <li> <span class="it"> M. Bendersky, W. B. Croft, D.A. Smith:</span> "Structural Annotation of Search Queries
+Using Pseudo-Relevance Feedback" <span class="it"> In Proceedings of CIKM 2010</span> <a href="pubs/2010-4.pdf">[pdf]</a> </li>   
+         <li> <span class="it"> M. Bendersky, W. Bruce Croft and D. A. Smith:</span> "Joint Annotation of Search Queries" <span class="it"> In Proceedings of ACL-HLT 2011 </span> <a href="pubs/2011-3.pdf">[pdf]</a> </li>   
+            <li>In these two papers, we annotated 250 search queries from a search log with capitalization, POS tagging and segmentation annotations. The annotation can be found in <a href="res/qryAnn.tar.gz">this tar.gz file</a>.</li>
+         </ul>
+         
+         <h3> Finding Text Reuse on the Web </h3>
+         
+         <ul>
+            <li> <span class="it"> M. Bendersky, W. B. Croft:</span> "Finding Text Reuse on the Web" <span class="it"> In Proceedings of WSDM 2009</span> <a href="pubs/2009-2.pdf">[pdf]</a></li> 
+            <li> In this paper, we used a set of 50 "text-reuse" queries. These queries were essentially sentence-long excerpts from news articles </li>
+            <li> <a href="res/ftr_queries.txt">This text file</a> provides a list of these queries. Each query is associated with a source date, to enable reproducing the source date detection results discussed in the paper.            
+         </ul>   
+         
+         <h3> Discovering Key Concepts in Verbose Queries </h3>
+         
+         <ul>
+            <li> <span class="it"> M. Bendersky, W. B. Croft:</span> "Discovering Key Concepts in Verbose Queries" <span class="it"> In Proceedings of SIGIR 2008</span> <a href="pubs/2008-2.pdf">[pdf]</a> </li>   
+            <li>In this paper, we annotated 500 TREC "description" queries with a "key concept". The key concept is defined as a single noun phrase that best represents the information need underlying the query. These annotations were used to train a concept weighting method.</li>
+            <li> <a href="res/kc.tar.gz">This tar.gz file</a> contains the annotated key concepts, as well as the structured Indri queries containing the concept weights learned by our method. See README.txt in the file for details.
+         </ul>
+         
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5586846-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+    </body>
+    
+</html>         
